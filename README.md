@@ -12,7 +12,6 @@ Go to website - [Link](https://sunilpark1129.github.io/re-spotless/)
 
 |Feature|Description|
 |:--:|:--|
-
 |Resposive|<img src="https://user-images.githubusercontent.com/106734133/199409766-e6878d03-1fa3-401f-8651-b6b0d2ad9236.jpg" width="400"><br><br>This website works with any window sizes. It is divided into mobile size, tablet size, and desktop size.|
 |Banner|<img src="https://user-images.githubusercontent.com/106734133/199409151-218603ca-3b0b-449f-b70c-51261a504b08.jpg" width="400"><br><br>Press the arrow button or click the dot at the bottom center to move to the selected index slide.<At the bottom there is a process bar that will automatically move you to the next slide. When the value of currentIndex(current slide index) is changed, setInterval is initialized so that the process bar is continuously refreshed.|
 |Animation|<img src="https://user-images.githubusercontent.com/106734133/199409241-733b58f7-0ad3-42e2-bfa0-1ffe3eb8650c.jpg" height="400"><br><br>When you scroll down on the homepage, animations are activated in the information section. Use the useObserver method to help the animation work by changing the value of isVisible to true when the scroll reaches the position of the section.|
