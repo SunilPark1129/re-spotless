@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Spotless
+![spotless-bg](https://user-images.githubusercontent.com/106734133/199409702-ac757af9-42a5-4fce-988b-69877837e871.jpg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Go to website - [Link](https://sunilpark1129.github.io/re-spotless/)
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+- This is the website of Spotless, a laundromat.
 
-### `npm start`
+## Features
+> Features that I would like to introduce.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+|Feature|Description|
+|:--:|:--|
+|Resposive|<img src="https://user-images.githubusercontent.com/106734133/199409766-e6878d03-1fa3-401f-8651-b6b0d2ad9236.jpg" width="400"><br><br>This website works with any window sizes. It is divided into mobile size, tablet size, and desktop size.|
+|Banner|<img src="https://user-images.githubusercontent.com/106734133/199409151-218603ca-3b0b-449f-b70c-51261a504b08.jpg" width="400"><br><br>Press the arrow button or click the dot at the bottom center to move to the selected index slide.<At the bottom there is a process bar that will automatically move you to the next slide. When the value of currentIndex(current slide index) is changed, setInterval is initialized so that the process bar is continuously refreshed.|
+|Animation|<img src="https://user-images.githubusercontent.com/106734133/199409241-733b58f7-0ad3-42e2-bfa0-1ffe3eb8650c.jpg" height="400"><br><br>When you scroll down on the homepage, animations are activated in the information section. Use the useObserver method to help the animation work by changing the value of isVisible to true when the scroll reaches the position of the section.|
+|Dark Mode|<img src="https://user-images.githubusercontent.com/106734133/199409287-8852cf4c-e771-4464-ba3b-bfea602bb94e.jpg" height="400"><br><br>Use Dark Mode (it's on the top right in Navabr section) to change from a light colored website to a dark colored website. When the dark mode button is pressed, a boolean value is obtained to determine the color value of the theme. (Using Styled Components)|
+|Dates|<img src="https://user-images.githubusercontent.com/106734133/199409435-a7798ac9-539f-4988-9d89-419c809dcc77.jpg" height="400"><br><br>This feature helps users to visually check what day of the week is today when checking open hours section. Determines the number from Sunday to Saturday from 0 to 7, compares it with the value obtained with getDay(), and changes the style when the value is the same.|
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Used
 
-### `npm test`
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation
+1. Clone the repo
+```
+git clone https://github.com/SunilPark1129/re-spotless.git
+```
+2. Install all dependencies
+```
+npm install
+```
+> Dependencies I have installed :<br>react-router-dom<br> styled components<br> font awesome<br> 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. run the website
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Self-improvement
+> In the past, while creating a website, I took note of the parts that could be improved or that were difficult at the time to develop the website.
+So I updated the old website with reference to this note for self-development. My Old Site - [Link](https://github.com/SunilPark1129/spotless)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [x] I thought I should use more annotations to describe when using javascript.
+  - I used a lot of comments above the coding to help understand.
+- [x] I need to add more content and features.
+  - Removed existing features and added dark mode, modal, and animation features.
+- [x] It seems that JavaScript coding can be used more efficiently and lines can be further reduced.
+  - I have optimized the lines of code using the map() method for repeatable coding. And for better performance of the website, rendering elements are minimized (Functions that can be rendered are divided into different file).
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Status
+Completed
