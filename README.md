@@ -1,7 +1,7 @@
 # Spotless
 ![spotless-bg](https://user-images.githubusercontent.com/106734133/199409702-ac757af9-42a5-4fce-988b-69877837e871.jpg)
 
-Go to website - [Link](https://sunilpark1129.github.io/re-spotless/)
+Go to website - [Link](https://sp-spotless.netlify.app)
 
 ## Project Description
 
