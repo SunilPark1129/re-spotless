@@ -20,17 +20,17 @@ import { faMoon, faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
   {
-    path: "/re-spotless/",
+    path: "/",
     label: "HOME",
     exact: "true",
   },
   {
-    path: "/re-spotless/service",
+    path: "/service",
     label: "SERVICE",
     exact: "false",
   },
   {
-    path: "/re-spotless/contact",
+    path: "/contact",
     label: "CONTACT",
     exact: "false",
   },
@@ -40,7 +40,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <StyledNavbar>
       <StyledContainerNavbar>
-        <Link to="/re-spotless/">
+        <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
         <StyledNavbarLink>

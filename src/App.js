@@ -40,9 +40,9 @@ function App() {
         />
         <Container>
           <Routes>
-            <Route path="/re-spotless/" element={<Home />} />
-            <Route path="/re-spotless/service" element={<Service />} />
-            <Route path="/re-spotless/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Container>
       </Router>
