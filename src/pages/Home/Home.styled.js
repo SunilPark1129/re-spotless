@@ -3,6 +3,7 @@ import { StyledMain } from "../../components/styles/Page.styled";
 
 export const StyledMainHome = styled(StyledMain)
 `
+  overflow: hidden;
   .isVisible {
     transform: translateX(0);
     &:nth-child(2) {
