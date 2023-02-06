@@ -38,41 +38,47 @@ const links = [
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   return (
-    <StyledNavbar>
-      <StyledContainerNavbar>
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
-        <StyledNavbarLink>
-          <>
-            {links.map(({ path, label, exact }, idx) => (
-              <li key={idx}>
-                <NavLink
-                  to={path}
-                  exact={exact}
-                  end
-                  style={({ isActive }) =>
-                    isActive
-                      ? { color: `${({ theme }) => theme.colors.main}` }
-                      : {}
-                  }
-                  className={({ isActive }) => (isActive ? "nav--active" : "")}
-                >
-                  {label}
-                </NavLink>
-              </li>
-            ))}
-            <StyledDarkMode
-              onClick={() => {
-                setDarkMode(!darkMode);
-              }}
-            >
-              <FontAwesomeIcon icon={darkMode ? faMoon : faCircleHalfStroke} />
-            </StyledDarkMode>
-          </>
-        </StyledNavbarLink>
-      </StyledContainerNavbar>
-    </StyledNavbar>
+    <header>
+      <StyledNavbar>
+        <StyledContainerNavbar>
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
+          <StyledNavbarLink>
+            <>
+              {links.map(({ path, label, exact }, idx) => (
+                <li key={idx}>
+                  <NavLink
+                    to={path}
+                    exact={exact}
+                    end
+                    style={({ isActive }) =>
+                      isActive
+                        ? { color: `${({ theme }) => theme.colors.main}` }
+                        : {}
+                    }
+                    className={({ isActive }) =>
+                      isActive ? "nav--active" : ""
+                    }
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
+              <StyledDarkMode
+                onClick={() => {
+                  setDarkMode(!darkMode);
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={darkMode ? faMoon : faCircleHalfStroke}
+                />
+              </StyledDarkMode>
+            </>
+          </StyledNavbarLink>
+        </StyledContainerNavbar>
+      </StyledNavbar>
+    </header>
   );
 };
 
