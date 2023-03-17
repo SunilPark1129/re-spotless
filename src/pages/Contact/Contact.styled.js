@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import { StyledMain } from "../../components/styles/Page.styled";
+import { StyledArticle } from "../../components/styles/Page.styled";
 
-export const StyledMainContact = styled(StyledMain)
-`
+export const StyledArticleContact = styled(StyledArticle)`
   .active {
     background-color: ${({ theme }) => theme.colors.main};
   }
 `;
 
-export const StyledLocation = styled.div `
+export const StyledLocation = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;

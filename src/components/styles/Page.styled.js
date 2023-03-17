@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-export const StyledPage = styled.section `
+export const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   width: 100%;
 `;
 
-export const StyledHeader = styled.header `
+export const StyledHeader = styled.header`
   text-align: center;
-  padding: 2rem 1rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -28,7 +28,7 @@ export const StyledHeader = styled.header `
   }
 `;
 
-export const StyledMain = styled.main `
+export const StyledArticle = styled.article`
   padding: 2rem;
   display: flex;
   flex-direction: column;

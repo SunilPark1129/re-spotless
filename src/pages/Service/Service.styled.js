@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import { StyledMain } from "../../components/styles/Page.styled";
+import { StyledArticle } from "../../components/styles/Page.styled";
 
-export const StyledMainService = styled(StyledMain)
-`
+export const StyledArticleService = styled(StyledArticle)`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 `;
 
-export const StyledService = styled.section `
+export const StyledService = styled.section`
   display: flex;
   flex: 1 1 20%;
   flex-direction: column;
@@ -27,7 +26,7 @@ export const StyledService = styled.section `
   }
 `;
 
-export const ServiceSection = styled.section `
+export const ServiceSection = styled.section`
   border: 2px solid ${({ theme }) => theme.colors.main};
   border-radius: 0.5rem;
   cursor: pointer;
@@ -50,7 +49,7 @@ export const ServiceSection = styled.section `
     gap: 2em;
     padding: 1rem;
 
-    h2 {
+    h4 {
       font-size: 1.3em;
     }
 

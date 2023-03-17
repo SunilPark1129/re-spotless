@@ -63,17 +63,17 @@ const Banner = () => {
     <StyledBanner>
       <StyledBannerImage className={currentIndex === 0 ? "banner-display" : ""}>
         <img src={bannerWater} alt="water with bubbles" />
-        <h3>Keep it clean and beautiful</h3>
+        <h4>Keep it clean and beautiful</h4>
         <p>Cleanliness and beauty determine your impression</p>
       </StyledBannerImage>
       <StyledBannerImage className={currentIndex === 1 ? "banner-display" : ""}>
         <img src={bannerPeople} alt="two people are looking at their shirts" />
-        <h3>Services for customers</h3>
+        <h4>Services for customers</h4>
         <p>We provide many services to satisfy our customers</p>
       </StyledBannerImage>
       <StyledBannerImage className={currentIndex === 2 ? "banner-display" : ""}>
         <img src={bannerQuality} alt="silk that expresses quality" />
-        <h3>We are here for you</h3>
+        <h4>We are here for you</h4>
         <p>Please contact us if have any inquiries or questions</p>
       </StyledBannerImage>
       <StyledBannerButton onClick={() => setCurrentIndex(currentIndex - 1)}>

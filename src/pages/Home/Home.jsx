@@ -12,14 +12,14 @@ Main.jsx
 
 import React from "react";
 
-import { StyledPage, StyledHeader } from "../../components/styles/Page.styled";
+import { StyledMain, StyledHeader } from "../../components/styles/Page.styled";
 
 import Banner from "./Banner";
 import Main from "./Main";
 
 const Home = () => {
   return (
-    <StyledPage>
+    <StyledMain>
       <Banner />
       <StyledHeader>
         <h1>Information</h1>
@@ -31,7 +31,7 @@ const Home = () => {
         <p>Feel free to scroll down to read a brief description of us</p>
       </StyledHeader>
       <Main className="home" />
-    </StyledPage>
+    </StyledMain>
   );
 };
 

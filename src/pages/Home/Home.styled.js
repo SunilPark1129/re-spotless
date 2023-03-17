@@ -1,8 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import { StyledMain } from "../../components/styles/Page.styled";
+import { StyledArticle } from "../../components/styles/Page.styled";
 
-export const StyledMainHome = styled(StyledMain)
-`
+export const StyledArticleHome = styled(StyledArticle)`
   overflow: hidden;
   .isVisible {
     transform: translateX(0);
@@ -12,7 +11,7 @@ export const StyledMainHome = styled(StyledMain)
   }
 `;
 
-export const StyledBanner = styled.div `
+export const StyledBanner = styled.article`
   display: flex;
   width: 100%;
   height: 40rem;
@@ -24,7 +23,7 @@ export const StyledBanner = styled.div `
     opacity: 1;
     pointer-events: auto;
 
-    h3 {
+    h4 {
       opacity: 1;
       transform: translateX(0);
       transition-duration: 1s;
@@ -46,7 +45,7 @@ export const StyledBanner = styled.div `
   }
 `;
 
-export const StyledBannerImage = styled.div `
+export const StyledBannerImage = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -73,8 +72,9 @@ export const StyledBannerImage = styled.div `
     filter: contrast(180%) brightness(70%);
   }
 
-  h3 {
-    font-size: 2.3em;
+  h4 {
+    color: ${({ theme }) => theme.colors.constLight};
+    font-size: 1.8em;
     opacity: 0;
     transform: translateX(-20%);
     transition-property: transform, opacity;
@@ -91,7 +91,7 @@ export const StyledBannerImage = styled.div `
   }
 `;
 
-export const StyledBannerButton = styled.button `
+export const StyledBannerButton = styled.button`
   position: absolute;
   width: 2em;
   height: 2em;
@@ -117,7 +117,7 @@ export const StyledBannerButton = styled.button `
   }
 `;
 
-export const StyledBannerDots = styled.div `
+export const StyledBannerDots = styled.div`
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
@@ -159,7 +159,7 @@ export const StyledBannerDots = styled.div `
   }
 `;
 
-export const AnimationBannerProcess = keyframes `
+export const AnimationBannerProcess = keyframes`
   0% {
     left: -100%;
   }
@@ -168,7 +168,7 @@ export const AnimationBannerProcess = keyframes `
   }
 `;
 
-export const StyledBannerProcess = styled.div `
+export const StyledBannerProcess = styled.div`
   width: 100%;
   height: 0.5rem;
   background-color: ${({ theme }) => theme.colors.constDark};
@@ -190,7 +190,7 @@ export const StyledBannerProcess = styled.div `
   }
 `;
 
-export const HomeSection = styled.section `
+export const HomeSection = styled.section`
   display: flex;
   align-items: center;
   max-width: 50rem;
@@ -201,6 +201,10 @@ export const HomeSection = styled.section `
   transform: translateX(-50%);
   transition-property: transform;
   transition-duration: 0.3s;
+
+  h4 {
+    font-size: 1.3em;
+  }
 
   img {
     width: 20em;

@@ -11,11 +11,11 @@ Modal.jsx
 
 import React from "react";
 import {
-  StyledPage,
   StyledMain,
+  StyledArticle,
   StyledHeader,
 } from "../../components/styles/Page.styled";
-import { StyledMainService, StyledService } from "./Service.styled";
+import { StyledArticleService, StyledService } from "./Service.styled";
 
 import { serviceData, data } from "./data";
 import Modal from "./Modal";
@@ -23,7 +23,7 @@ import Modal from "./Modal";
 const Service = () => {
   return (
     <>
-      <StyledPage>
+      <StyledMain>
         <StyledHeader>
           <h1>Service</h1>
           <span></span>
@@ -32,7 +32,7 @@ const Service = () => {
             serve our customers
           </p>
         </StyledHeader>
-        <StyledMainService>
+        <StyledArticleService>
           {serviceData.map((item) => {
             return (
               <StyledService key={item.subject}>
@@ -42,9 +42,9 @@ const Service = () => {
               </StyledService>
             );
           })}
-        </StyledMainService>
-      </StyledPage>
-      <StyledPage>
+        </StyledArticleService>
+      </StyledMain>
+      <StyledMain>
         <StyledHeader>
           <h1>Q & A</h1>
           <span></span>
@@ -54,7 +54,7 @@ const Service = () => {
           </p>
           <p>Click on the boxes below to find out what we can offer</p>
         </StyledHeader>
-        <StyledMain>
+        <StyledArticle>
           {data.map((item) => {
             return (
               <Modal
@@ -65,8 +65,8 @@ const Service = () => {
               />
             );
           })}
-        </StyledMain>
-      </StyledPage>
+        </StyledArticle>
+      </StyledMain>
     </>
   );
 };

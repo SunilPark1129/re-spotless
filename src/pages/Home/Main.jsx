@@ -12,7 +12,7 @@ when the div targeted by useRef reaches its scroll goal, useOberserver causes th
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
-import { StyledMainHome } from "./Home.styled";
+import { StyledArticleHome } from "./Home.styled";
 import { HomeSection } from "./Home.styled";
 
 import homeImgStrongWoman from "../../assets/strong_woman.png";
@@ -37,14 +37,14 @@ const Main = () => {
   const isVisibleTwo = useObserver(observerOption, secondTarget, true);
   const isVisibleThree = useObserver(observerOption, thirdTarget, true);
   return (
-    <StyledMainHome>
+    <StyledArticleHome>
       <HomeSection
         home
         ref={firstTarget}
         className={`${isVisibleOne ? "isVisible" : ""}`}
       >
         <div>
-          <h2>We are Spotless Cleaners!</h2>
+          <h4>We are Spotless Cleaners!</h4>
           <p>
             We have been running a laundry in Deptford, NJ for over 10 years.
             The reason we have been able to run a laundry for a long time is
@@ -64,7 +64,7 @@ const Main = () => {
         className={`${isVisibleTwo ? "isVisible" : ""}`}
       >
         <div>
-          <h2>How we serve our customers</h2>
+          <h4>How we serve our customers</h4>
           <p>
             We provide many services to satisfy our customers. Among the many
             services, we use Organic Dry Cleaning to remove damage to clothes
@@ -83,7 +83,7 @@ const Main = () => {
         className={`${isVisibleThree ? "isVisible" : ""}`}
       >
         <div>
-          <h2>Contact us anytime</h2>
+          <h4>Contact us anytime</h4>
           <p>
             We love to check our emails to better serve our customers. If you
             have any questions or inquiries, please email us from the contact
@@ -97,7 +97,7 @@ const Main = () => {
         </div>
         <img src={homeImgIronWoman} alt="woman ironing" />
       </HomeSection>
-    </StyledMainHome>
+    </StyledArticleHome>
   );
 };
 
