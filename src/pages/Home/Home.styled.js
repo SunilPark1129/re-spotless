@@ -1,7 +1,10 @@
 import styled, { keyframes } from "styled-components";
-import { StyledArticle } from "../../components/styles/Page.styled";
+import {
+  StyledArticle,
+  StyledContent,
+} from "../../components/styles/Page.styled";
 
-export const StyledArticleHome = styled(StyledArticle)`
+export const StyledHomeContent = styled(StyledContent)`
   overflow: hidden;
   .isVisible {
     transform: translateX(0);
@@ -45,7 +48,7 @@ export const StyledBanner = styled.article`
   }
 `;
 
-export const StyledBannerImage = styled.div`
+export const StyledBannerImage = styled.section`
   position: absolute;
   width: 100%;
   height: 100%;

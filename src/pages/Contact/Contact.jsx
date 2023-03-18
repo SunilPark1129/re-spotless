@@ -3,9 +3,6 @@ Created by Sunil Park
 
 Purpose:
 This page provides information on how customers can access the store.
-
-Re-render:
-none
 */
 
 import React from "react";
@@ -16,7 +13,7 @@ import {
   StyledHeader,
 } from "../../components/styles/Page.styled";
 
-import { StyledArticleContact, StyledLocation } from "./Contact.styled";
+import { StyledArticleContact, StyledContactContent } from "./Contact.styled";
 
 import { open, data } from "./data";
 
@@ -27,16 +24,16 @@ const Contact = () => {
 
   return (
     <StyledMain>
-      <StyledHeader>
-        <h1>Contact</h1>
-        <span></span>
-        <p>
-          If you have any other questions, please visit us directly or contact
-          us by e-mail
-        </p>
-      </StyledHeader>
       <StyledArticle>
-        <StyledLocation>
+        <StyledHeader>
+          <h1>Contact</h1>
+          <span></span>
+          <p>
+            If you have any other questions, please visit us directly or contact
+            us by e-mail
+          </p>
+        </StyledHeader>
+        <StyledContactContent>
           {data.map(({ subject, description }) => {
             return (
               <div key={subject}>
@@ -45,15 +42,15 @@ const Contact = () => {
               </div>
             );
           })}
-        </StyledLocation>
+        </StyledContactContent>
       </StyledArticle>
-      <StyledHeader>
-        <h1>Open Hours</h1>
-        <span></span>
-        <p>We are ready to provide you with a good service</p>
-      </StyledHeader>
       <StyledArticleContact>
-        <StyledLocation>
+        <StyledHeader>
+          <h1>Open Hours</h1>
+          <span></span>
+          <p>We are ready to provide you with a good service</p>
+        </StyledHeader>
+        <StyledContactContent>
           {/* If the number 'now' and value of data are the same, change the className to active and apply color */}
           {open.map((item, idx) => {
             return (
@@ -63,7 +60,7 @@ const Contact = () => {
               </div>
             );
           })}
-        </StyledLocation>
+        </StyledContactContent>
       </StyledArticleContact>
     </StyledMain>
   );

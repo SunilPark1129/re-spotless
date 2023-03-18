@@ -7,7 +7,7 @@ export const StyledArticleContact = styled(StyledArticle)`
   }
 `;
 
-export const StyledLocation = styled.div`
+export const StyledContactContent = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;

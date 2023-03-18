@@ -10,7 +10,7 @@ whenever modal button is pressed, the page is rendered.
 */
 
 import React, { useState } from "react";
-import { ServiceSection } from "./Service.styled";
+import { StyledServiceModalSection } from "./Service.styled";
 
 const Modal = ({ icon, subject, description }) => {
   const [hasModalOpen, setModalOpen] = useState(false);
@@ -20,15 +20,15 @@ const Modal = ({ icon, subject, description }) => {
   };
 
   return (
-    <ServiceSection onClick={onClickHandler}>
+    <StyledServiceModalSection onClick={onClickHandler}>
       <header className={hasModalOpen ? "subject--active" : ""}>
         <p>{icon}</p>
         <h4>{subject}</h4>
       </header>
-      <article className={hasModalOpen ? "description--active" : ""}>
+      <div className={hasModalOpen ? "description--active" : ""}>
         <p>{description}</p>
-      </article>
-    </ServiceSection>
+      </div>
+    </StyledServiceModalSection>
   );
 };
 

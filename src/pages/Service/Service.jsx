@@ -14,16 +14,21 @@ import {
   StyledMain,
   StyledArticle,
   StyledHeader,
+  StyledContent,
 } from "../../components/styles/Page.styled";
-import { StyledArticleService, StyledService } from "./Service.styled";
+import {
+  StyledArticleService,
+  StyledServiceContent,
+  StyledServiceSection,
+} from "./Service.styled";
 
 import { serviceData, data } from "./data";
 import Modal from "./Modal";
 
 const Service = () => {
   return (
-    <>
-      <StyledMain>
+    <StyledMain>
+      <StyledArticleService>
         <StyledHeader>
           <h1>Service</h1>
           <span></span>
@@ -32,19 +37,19 @@ const Service = () => {
             serve our customers
           </p>
         </StyledHeader>
-        <StyledArticleService>
+        <StyledServiceContent>
           {serviceData.map((item) => {
             return (
-              <StyledService key={item.subject}>
+              <StyledServiceSection key={item.subject}>
                 <img src={item.image} alt={item.subject} />
                 <h2>{item.subject}</h2>
                 <p>{item.description}</p>
-              </StyledService>
+              </StyledServiceSection>
             );
           })}
-        </StyledArticleService>
-      </StyledMain>
-      <StyledMain>
+        </StyledServiceContent>
+      </StyledArticleService>
+      <StyledArticle>
         <StyledHeader>
           <h1>Q & A</h1>
           <span></span>
@@ -54,7 +59,7 @@ const Service = () => {
           </p>
           <p>Click on the boxes below to find out what we can offer</p>
         </StyledHeader>
-        <StyledArticle>
+        <StyledContent>
           {data.map((item) => {
             return (
               <Modal
@@ -65,9 +70,9 @@ const Service = () => {
               />
             );
           })}
-        </StyledArticle>
-      </StyledMain>
-    </>
+        </StyledContent>
+      </StyledArticle>
+    </StyledMain>
   );
 };
 

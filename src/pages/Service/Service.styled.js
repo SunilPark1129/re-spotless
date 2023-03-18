@@ -1,13 +1,14 @@
 import styled from "styled-components";
-import { StyledArticle } from "../../components/styles/Page.styled";
+import {
+  StyledArticle,
+  StyledContent,
+} from "../../components/styles/Page.styled";
 
 export const StyledArticleService = styled(StyledArticle)`
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
 `;
 
-export const StyledService = styled.section`
+export const StyledServiceSection = styled.section`
   display: flex;
   flex: 1 1 20%;
   flex-direction: column;
@@ -26,7 +27,13 @@ export const StyledService = styled.section`
   }
 `;
 
-export const ServiceSection = styled.section`
+export const StyledServiceContent = styled(StyledContent)`
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+export const StyledServiceModalSection = styled.section`
   border: 2px solid ${({ theme }) => theme.colors.main};
   border-radius: 0.5rem;
   cursor: pointer;
@@ -61,7 +68,7 @@ export const ServiceSection = styled.section`
     }
   }
 
-  article {
+  div {
     display: none;
     background-color: ${({ theme }) => theme.colors.light};
     padding: 2rem;

@@ -12,8 +12,7 @@ when the div targeted by useRef reaches its scroll goal, useOberserver causes th
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
-import { StyledArticleHome } from "./Home.styled";
-import { HomeSection } from "./Home.styled";
+import { StyledHomeContent, HomeSection } from "./Home.styled";
 
 import homeImgStrongWoman from "../../assets/strong_woman.png";
 import homeImgLaundryWoman from "../../assets/laundry_woman.png";
@@ -37,7 +36,7 @@ const Main = () => {
   const isVisibleTwo = useObserver(observerOption, secondTarget, true);
   const isVisibleThree = useObserver(observerOption, thirdTarget, true);
   return (
-    <StyledArticleHome>
+    <StyledHomeContent>
       <HomeSection
         home
         ref={firstTarget}
@@ -97,7 +96,7 @@ const Main = () => {
         </div>
         <img src={homeImgIronWoman} alt="woman ironing" />
       </HomeSection>
-    </StyledArticleHome>
+    </StyledHomeContent>
   );
 };
 
