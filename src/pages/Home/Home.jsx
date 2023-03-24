@@ -20,22 +20,15 @@ import {
 
 import Banner from "./Banner";
 import Main from "./Main";
+import Photos from "./Photos";
 
 const Home = () => {
   return (
     <StyledMain>
       <Banner />
       <StyledContent>
-        <StyledHeader>
-          <h1>Information</h1>
-          <span></span>
-          <p>
-            Welcome and thank you for visiting our website of Spotless Cleaners
-            located in Deptford NJ
-          </p>
-          <p>Feel free to scroll down to read a brief description of us</p>
-        </StyledHeader>
         <Main className="home" />
+        <Photos />
       </StyledContent>
     </StyledMain>
   );

@@ -1,14 +1,11 @@
 import styled, { keyframes } from "styled-components";
-import {
-  StyledArticle,
-  StyledContent,
-} from "../../components/styles/Page.styled";
+import { StyledContent } from "../../components/styles/Page.styled";
 
 export const StyledHomeContent = styled(StyledContent)`
   overflow: hidden;
   .isVisible {
     transform: translateX(0);
-    &:nth-child(2) {
+    &:nth-of-type(2) {
       transform: translateX(0);
     }
   }
@@ -231,5 +228,22 @@ export const HomeSection = styled.section`
     color: ${({ theme }) => theme.colors.main};
     text-decoration: underline;
     font-weight: bolder;
+  }
+`;
+
+export const StyledPhoto = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 `;

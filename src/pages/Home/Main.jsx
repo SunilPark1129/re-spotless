@@ -13,6 +13,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { StyledHomeContent, HomeSection } from "./Home.styled";
+import { StyledHeader } from "../../components/styles/Page.styled";
 
 import homeImgStrongWoman from "../../assets/strong_woman.png";
 import homeImgLaundryWoman from "../../assets/laundry_woman.png";
@@ -37,6 +38,15 @@ const Main = () => {
   const isVisibleThree = useObserver(observerOption, thirdTarget, true);
   return (
     <StyledHomeContent>
+      <StyledHeader>
+        <h1>Information</h1>
+        <span></span>
+        <p>
+          Welcome and thank you for visiting our website of Spotless Cleaners
+          located in Deptford NJ
+        </p>
+        <p>Feel free to scroll down to read a brief description of us</p>
+      </StyledHeader>
       <HomeSection
         home
         ref={firstTarget}
