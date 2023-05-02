@@ -5,7 +5,7 @@ Go to website - [Link](https://sp-spotless.netlify.app)
 
 ## Project Description
 
-- Spotless, a laundromat.
+- Shows a list of services provided by the dry cleaners.
 
 ## Features
 > Features that I would like to introduce.
