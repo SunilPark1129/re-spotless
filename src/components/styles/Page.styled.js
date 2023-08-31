@@ -6,7 +6,7 @@ export const StyledMain = styled.main`
   width: 100%;
 `;
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled.div`
   text-align: center;
   padding-top: 1rem;
   display: flex;
@@ -15,8 +15,12 @@ export const StyledHeader = styled.header`
   margin: 2rem 0;
   border-top: 4px dashed ${({ theme }) => theme.colors.main};
 
+  h1 {
+    font-size: 1.5em;
+  }
+
   p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   span {

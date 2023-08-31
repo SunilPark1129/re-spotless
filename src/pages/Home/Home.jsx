@@ -12,11 +12,7 @@ Main.jsx
 
 import React from "react";
 
-import {
-  StyledMain,
-  StyledHeader,
-  StyledContent,
-} from "../../components/styles/Page.styled";
+import { StyledMain, StyledContent } from "../../components/styles/Page.styled";
 
 import Banner from "./Banner";
 import Main from "./Main";

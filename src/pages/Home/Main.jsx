@@ -22,7 +22,6 @@ import homeImgIronWoman from "../../assets/iron_woman.png";
 import useObserver from "../../hooks/useObserver";
 
 const Main = () => {
-  // these are sent through props to use in useObserver.
   const firstTarget = useRef(null);
   const secondTarget = useRef(null);
   const thirdTarget = useRef(null);

@@ -22,10 +22,14 @@ const Modal = ({ icon, subject, description }) => {
   return (
     <StyledServiceModalSection onClick={onClickHandler}>
       <header className={hasModalOpen ? "subject--active" : ""}>
-        <p>{icon}</p>
+        <div className="icon">{icon}</div>
         <h4>{subject}</h4>
       </header>
-      <div className={hasModalOpen ? "description--active" : ""}>
+      <div
+        className={
+          hasModalOpen ? "description description--active" : "description"
+        }
+      >
         <p>{description}</p>
       </div>
     </StyledServiceModalSection>

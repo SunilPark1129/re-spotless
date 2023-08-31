@@ -44,7 +44,7 @@ export const StyledServiceModalSection = styled.section`
   &:hover {
     background-color: ${({ theme }) => theme.colors.main};
     header {
-      p {
+      .icon {
         color: ${({ theme }) => theme.colors.dark};
       }
     }
@@ -60,7 +60,7 @@ export const StyledServiceModalSection = styled.section`
       font-size: 1.3em;
     }
 
-    p {
+    .icon {
       width: 1rem;
       transition: 0.2s color;
       font-size: 1.5em;
@@ -68,7 +68,7 @@ export const StyledServiceModalSection = styled.section`
     }
   }
 
-  div {
+  .description {
     display: none;
     background-color: ${({ theme }) => theme.colors.light};
     padding: 2rem;
@@ -83,7 +83,8 @@ export const StyledServiceModalSection = styled.section`
 
   .subject--active {
     background-color: ${({ theme }) => theme.colors.main};
-    p {
+    p,
+    .icon {
       color: ${({ theme }) => theme.colors.dark};
     }
   }

@@ -1,8 +1,13 @@
 import styled, { keyframes } from "styled-components";
 import { StyledContent } from "../../components/styles/Page.styled";
 
-export const StyledHomeContent = styled(StyledContent)`
+export const StyledHomeContent = styled.article`
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+
   .isVisible {
     transform: translateX(0);
     &:nth-of-type(2) {
@@ -11,7 +16,7 @@ export const StyledHomeContent = styled(StyledContent)`
   }
 `;
 
-export const StyledBanner = styled.article`
+export const StyledBanner = styled.div`
   display: flex;
   width: 100%;
   height: 40rem;
@@ -23,7 +28,7 @@ export const StyledBanner = styled.article`
     opacity: 1;
     pointer-events: auto;
 
-    h4 {
+    h2 {
       opacity: 1;
       transform: translateX(0);
       transition-duration: 1s;
@@ -45,7 +50,7 @@ export const StyledBanner = styled.article`
   }
 `;
 
-export const StyledBannerImage = styled.section`
+export const StyledBannerSection = styled.section`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -72,7 +77,7 @@ export const StyledBannerImage = styled.section`
     filter: contrast(180%) brightness(70%);
   }
 
-  h4 {
+  h2 {
     color: ${({ theme }) => theme.colors.constLight};
     font-size: 1.8em;
     opacity: 0;
