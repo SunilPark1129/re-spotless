@@ -6,16 +6,16 @@ Go to old website - [Link](https://github.com/SunilPark1129/spotless)
 
 ## Project Description
 
-- Shows a list of services provided by the dry cleaners.
+- Spotless Cleaners provides friendly services to assist customers with clothing alterations and laundry. You can check the services offered on this website.
 
 ## Features
 > Features that I would like to introduce.
 
 |Feature|Description|
 |:--:|:--|
-|Resposive|<img src="https://user-images.githubusercontent.com/106734133/199409766-e6878d03-1fa3-401f-8651-b6b0d2ad9236.jpg" height="400"><br><br>This website works with any window sizes. It is divided into mobile size, tablet size, and desktop size.|
-|Slide Banner|<img src="https://user-images.githubusercontent.com/106734133/199409151-218603ca-3b0b-449f-b70c-51261a504b08.jpg" width="400"><br><br>Press the arrow button or click the dot at the bottom center to move to the selected index slide.|
-|Animation|<img src="https://user-images.githubusercontent.com/106734133/199409241-733b58f7-0ad3-42e2-bfa0-1ffe3eb8650c.jpg" height="400"><br><br>When you scroll down on the homepage, animations are activated in the information section. Use the useObserver method to help the animation work by changing the value of isVisible to true when the scroll reaches the position of the section.|
+|Resposive|<img src="https://user-images.githubusercontent.com/106734133/199409766-e6878d03-1fa3-401f-8651-b6b0d2ad9236.jpg" height="400"><br><br>This website works with any devices. It is divided into mobile size, tablet size, and desktop size.|
+|Slide Banner|<img src="https://user-images.githubusercontent.com/106734133/199409151-218603ca-3b0b-449f-b70c-51261a504b08.jpg" width="400"><br><br>Press the arrow button or click the dot at the bottom center to make move the banner.|
+|Animation|<img src="https://user-images.githubusercontent.com/106734133/199409241-733b58f7-0ad3-42e2-bfa0-1ffe3eb8650c.jpg" height="400"><br><br>When you scroll down on the homepage, animations are activated in the information section. Used the ```useObserver``` method to help the animation work by changing the value of ```boolean``` to ```true``` when the scroll reached the scroll position.|
 |Dark Mode|<img src="https://user-images.githubusercontent.com/106734133/199409287-8852cf4c-e771-4464-ba3b-bfea602bb94e.jpg" height="400"><br><br>A Dark Mode (it's on the top right in Navabr section) to change from a light colored website to a dark colored website.|
 |Dates|<img src="https://user-images.githubusercontent.com/106734133/199409435-a7798ac9-539f-4988-9d89-419c809dcc77.jpg" height="400"><br><br>This feature helps users to visually check what day of the week is today when checking open hours section. Determines the number from Sunday to Saturday from 0 to 7, compares it with the value obtained with getDay(), and changes the style when the value is the same.|
 
