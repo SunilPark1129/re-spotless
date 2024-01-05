@@ -17,6 +17,7 @@ import React, { useState, useEffect } from "react";
 import {
   StyledBanner,
   StyledBannerSection,
+  StyledBannerButtonBox,
   StyledBannerButton,
   StyledBannerDots,
   StyledBannerProcess,
@@ -31,20 +32,16 @@ const Banner = () => {
   const [animation, setAnimation] = useState("");
 
   useEffect(() => {
-    // reset the class name of the animation.
     setAnimation("");
 
-    // by putting the class name back into the animation, it helps to initialize it whenever the currentIndex changes.
     const resetProcessTimer = window.setInterval(() => {
       setAnimation("process-animation");
     }, 50);
 
-    // after time, the currentIndex will move to the next.
     const timer = window.setInterval(() => {
       setCurrentIndex((prev) => prev + 1);
     }, 8000);
 
-    // if currentIndex exceeds the maximum or minimum slide values, it sets the value to return to the beginning.
     let prev = currentIndex;
     if (prev > 2) {
       prev = 0;
@@ -82,26 +79,28 @@ const Banner = () => {
         <h2>We are here for you</h2>
         <p>Please contact us if have any inquiries or questions</p>
       </StyledBannerSection>
-      <StyledBannerButton onClick={() => setCurrentIndex(currentIndex - 1)}>
-        <FontAwesomeIcon icon={faCaretLeft} />
-      </StyledBannerButton>
-      <StyledBannerButton onClick={() => setCurrentIndex(currentIndex + 1)}>
-        <FontAwesomeIcon icon={faCaretRight} />
-      </StyledBannerButton>
-      <StyledBannerDots>
-        <div
-          className={currentIndex === 0 ? "isActive" : ""}
-          onClick={() => setCurrentIndex(0)}
-        ></div>
-        <div
-          className={currentIndex === 1 ? "isActive" : ""}
-          onClick={() => setCurrentIndex(1)}
-        ></div>
-        <div
-          className={currentIndex === 2 ? "isActive" : ""}
-          onClick={() => setCurrentIndex(2)}
-        ></div>
-      </StyledBannerDots>
+      <StyledBannerButtonBox>
+        <StyledBannerButton onClick={() => setCurrentIndex(currentIndex - 1)}>
+          <FontAwesomeIcon icon={faCaretLeft} />
+        </StyledBannerButton>
+        <StyledBannerButton onClick={() => setCurrentIndex(currentIndex + 1)}>
+          <FontAwesomeIcon icon={faCaretRight} />
+        </StyledBannerButton>
+        <StyledBannerDots>
+          <div
+            className={currentIndex === 0 ? "isActive" : ""}
+            onClick={() => setCurrentIndex(0)}
+          ></div>
+          <div
+            className={currentIndex === 1 ? "isActive" : ""}
+            onClick={() => setCurrentIndex(1)}
+          ></div>
+          <div
+            className={currentIndex === 2 ? "isActive" : ""}
+            onClick={() => setCurrentIndex(2)}
+          ></div>
+        </StyledBannerDots>
+      </StyledBannerButtonBox>
       <StyledBannerProcess>
         <span className={animation}></span>
       </StyledBannerProcess>

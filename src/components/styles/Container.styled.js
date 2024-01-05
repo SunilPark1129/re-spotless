@@ -5,6 +5,6 @@ export const Container = styled.div`
   max-width: ${({ theme }) => theme.tablet};
   display: flex;
   margin: auto;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   flex-direction: column;
 `;

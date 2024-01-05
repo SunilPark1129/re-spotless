@@ -4,6 +4,7 @@ export const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 2em;
 `;
 
 export const StyledHeader = styled.div`
@@ -11,12 +12,11 @@ export const StyledHeader = styled.div`
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin: 2rem 0;
-  border-top: 4px dashed ${({ theme }) => theme.colors.main};
+  gap: 1em;
+  margin: 1.5em;
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   p {
@@ -33,10 +33,17 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledArticle = styled.article`
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  &:not(:nth-of-type(1)) {
+    border-top: 4px dashed ${({ theme }) => theme.colors.main};
+  }
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 4rem;
+  }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     padding: 1rem;
@@ -46,6 +53,10 @@ export const StyledArticle = styled.article`
 export const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 0;
+  gap: 2em;
+  padding: 2em;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 0.5em;
+  }
 `;

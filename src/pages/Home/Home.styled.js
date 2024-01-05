@@ -5,8 +5,14 @@ export const StyledHomeContent = styled.article`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 0;
+
+  &:not(:nth-of-type(1)) {
+    border-top: 4px dashed ${({ theme }) => theme.colors.main};
+  }
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 4rem;
+  }
 
   .isVisible {
     transform: translateX(0);
@@ -19,10 +25,9 @@ export const StyledHomeContent = styled.article`
 export const StyledBanner = styled.div`
   display: flex;
   width: 100%;
-  height: 40rem;
+  height: 30rem;
   position: relative;
   overflow: hidden;
-  margin-top: 2rem;
 
   .banner-display {
     opacity: 1;
@@ -79,7 +84,7 @@ export const StyledBannerSection = styled.section`
 
   h2 {
     color: ${({ theme }) => theme.colors.constLight};
-    font-size: 1.8em;
+    font-size: 1.4em;
     opacity: 0;
     transform: translateX(-20%);
     transition-property: transform, opacity;
@@ -87,7 +92,7 @@ export const StyledBannerSection = styled.section`
   }
 
   p {
-    font-size: 1.6em;
+    font-size: 1.2em;
     opacity: 0;
     transform: translateX(20%);
     color: ${({ theme }) => theme.colors.constLight};
@@ -96,19 +101,30 @@ export const StyledBannerSection = styled.section`
   }
 `;
 
+export const StyledBannerButtonBox = styled.div`
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  bottom: 0;
+  align-items: center;
+`;
+
 export const StyledBannerButton = styled.button`
   position: absolute;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   background-color: ${({ theme }) => theme.colors.main};
-  bottom: 2rem;
   cursor: pointer;
   outline: none;
   border: none;
-  font-size: 1.5em;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 5px black;
-  color: ${({ theme }) => theme.colors.constDark};
+  font-size: 1.4em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px -3px black;
+  color: #d1d1d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     filter: brightness(120%);
@@ -123,17 +139,16 @@ export const StyledBannerButton = styled.button`
 `;
 
 export const StyledBannerDots = styled.div`
-  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  width: 8rem;
+  width: 6em;
   display: flex;
   justify-content: space-between;
 
   div {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     background-color: ${({ theme }) => theme.colors.main};
     border-radius: 50%;
     cursor: pointer;
@@ -147,8 +162,8 @@ export const StyledBannerDots = styled.div`
       top: 50%;
       transform: translate(-50%, -50%);
       border-radius: 50%;
-      width: 60%;
-      height: 60%;
+      width: 50%;
+      height: 50%;
     }
     &:hover {
       &:after {
@@ -208,11 +223,14 @@ export const HomeSection = styled.section`
   transition-duration: 0.3s;
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1em;
+  }
+  p {
+    font-size: 1em;
   }
 
   img {
-    width: 20em;
+    width: 16em;
     margin: auto;
   }
 
@@ -238,7 +256,7 @@ export const HomeSection = styled.section`
 
 export const StyledPhoto = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 
   img {

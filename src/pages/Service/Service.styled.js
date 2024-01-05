@@ -14,16 +14,24 @@ export const StyledServiceSection = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  max-width: 25rem;
-  min-width: 15rem;
+  max-width: 16rem;
+  min-width: 12rem;
   text-align: center;
 
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
   img {
-    width: 10em;
-    height: 10em;
+    width: 6em;
+    height: 6em;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0px 0px 5px black;
+    /* box-shadow: 0px 0px 5px black; */
   }
 `;
 
@@ -37,36 +45,8 @@ export const StyledServiceModalSection = styled.section`
   border: 2px solid ${({ theme }) => theme.colors.main};
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: 0.2s background-color;
   display: flex;
   flex-direction: column;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.main};
-    header {
-      .icon {
-        color: ${({ theme }) => theme.colors.dark};
-      }
-    }
-  }
-
-  header {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    padding: 1rem;
-
-    h4 {
-      font-size: 1.3em;
-    }
-
-    .icon {
-      width: 1rem;
-      transition: 0.2s color;
-      font-size: 1.5em;
-      color: ${({ theme }) => theme.colors.main};
-    }
-  }
 
   .description {
     display: none;
@@ -77,7 +57,7 @@ export const StyledServiceModalSection = styled.section`
     p {
       color: ${({ theme }) => theme.colors.dark};
       line-height: 1.8em;
-      font-size: 1.1em;
+      font-size: 1em;
     }
   }
 
@@ -91,5 +71,30 @@ export const StyledServiceModalSection = styled.section`
 
   .description--active {
     display: flex;
+  }
+`;
+
+export const StyledServiceModalCover = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 1rem;
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .icon {
+    width: 1rem;
+    font-size: 1.5em;
+    color: ${({ theme }) => theme.colors.main};
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.main};
+
+    .icon {
+      color: ${({ theme }) => theme.colors.dark};
+    }
   }
 `;

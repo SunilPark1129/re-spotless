@@ -12,7 +12,7 @@ Main.jsx
 
 import React from "react";
 
-import { StyledMain, StyledContent } from "../../components/styles/Page.styled";
+import { StyledMain } from "../../components/styles/Page.styled";
 
 import Banner from "./Banner";
 import Main from "./Main";
@@ -22,10 +22,8 @@ const Home = () => {
   return (
     <StyledMain>
       <Banner />
-      <StyledContent>
-        <Main className="home" />
-        <Photos />
-      </StyledContent>
+      <Main className="home" />
+      <Photos />
     </StyledMain>
   );
 };

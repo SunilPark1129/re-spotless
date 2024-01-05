@@ -15,6 +15,7 @@ export const StyledContactContent = styled.div`
   min-width: 18rem;
   max-width: 30rem;
   width: 100%;
+
   p {
     text-align: right;
   }
