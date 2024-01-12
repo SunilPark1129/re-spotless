@@ -261,7 +261,7 @@ export const StyledPhoto = styled.div`
 
   img {
     width: 100%;
-    height: 20em;
+    aspect-ratio: 4/5;
     object-fit: cover;
     border-radius: 8px;
   }
